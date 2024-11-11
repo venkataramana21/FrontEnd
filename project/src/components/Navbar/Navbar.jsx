@@ -18,6 +18,7 @@ function Navbar() {
           <Link to="/services" className="navbar-link">Services</Link>
           <Link to="/login" className="navbar-link">Login</Link>
           <Link to="/register" className="navbar-link">Register</Link>
+          <Link to="/emergency-contact" className="navbar-link">Emergency-Contact</Link>
         </div>
       </div>
     </nav>

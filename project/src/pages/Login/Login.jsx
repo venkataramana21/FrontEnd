@@ -47,7 +47,7 @@ function Login() {
         window.alert(`Hi, ${response.data.username}, you are logged in`);
 
         setAuthHeader(response.data.token);
-        // navigate('/home1');
+        navigate('/emergency-contact');
       } else {
         setError("Invalid response from server. Please try again.");
       }

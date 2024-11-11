@@ -6,6 +6,8 @@ import Services from './pages/Services/Services';
 
 import Register from '../src/pages/Register/Register';
 import Login from './pages/login/login';
+import EmergencyContact from './pages/EmergencyContact/EmergencyContact';
+import Home1 from './pages/Home/Home1';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register />} />
+        <Route path="/emergency-contact" element={<EmergencyContact />} />
+        <Route path="/Home1" element={<Home1/>}></Route>
         
       </Routes>
     </Router>
