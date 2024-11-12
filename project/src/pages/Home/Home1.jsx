@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../../components/Header/Header';
-import Hero1 from '../../components/Hero/Hero';
+import Hero from '../../components/Hero/Hero';
 import Chatbox from '../../components/Hero/ChatBox';
 import Footer from '../../components/Footer/Footer';
 import { ToastContainer, toast } from 'react-toastify';
@@ -23,7 +23,7 @@ const Home1 = () => {
   return (
     <div className="home-container"> {/* Add the home-container class here */}
       <Header />
-      <Hero1 />
+      <Hero />
       <Chatbox />
       <Footer />
       <ToastContainer /> {/* Add this component */}

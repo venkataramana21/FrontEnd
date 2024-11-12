@@ -8,6 +8,7 @@ import Register from '../src/pages/Register/Register';
 import Login from './pages/login/login';
 import EmergencyContact from './pages/EmergencyContact/EmergencyContact';
 import Home1 from './pages/Home/Home1';
+import Emergency from './pages/Emergency/Emergency';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/emergency-contact" element={<EmergencyContact />} />
         <Route path="/Home1" element={<Home1/>}></Route>
+        <Route path="/emergency" element={<Emergency/>}></Route>
         
       </Routes>
     </Router>

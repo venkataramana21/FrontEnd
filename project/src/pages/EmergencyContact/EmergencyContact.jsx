@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
+import { Link, Navigate, useNavigate, useNavigation } from "react-router-dom";
 // import { navigate } from 'react-router-dom'; // Assuming you're using react-router
+
 
 function EmergencyContact() {
   const [contactName, setContactName] = useState("");
@@ -8,7 +10,7 @@ function EmergencyContact() {
   const [relationship, setRelationship] = useState("");
   const [error, setError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-
+  const Navigate=useNavigate();
   // Validation for contact form input
   const validateInput = () => {
     // Validate all fields
@@ -87,10 +89,11 @@ function EmergencyContact() {
       console.log("Emergency contact submitted successfully", response.data);
 
       // Check if the response status is 200
-      if (response.status === 201) {
+      if (response.status === 201||response.status=== 200) {
         console.log("Submission successful:", response.data);
         // Optionally, navigate to the success page or any other route
-        navigate("/Home1");
+        Navigate("/Home1");
+        // Navigate("/login")
       } else {
         setError("Something went wrong. Please try again later.");
       }
@@ -184,6 +187,13 @@ function EmergencyContact() {
               </button>
             </div>
           </form>
+          <div className="mt-4 text-center text-sm">
+      <p>
+        
+        <span className="mx-2">|</span>
+        <Link to="/home1" className="text-gray-500 hover:underline">Already Filled</Link>
+      </p>
+    </div>
         </div>
       </div>
     </>
